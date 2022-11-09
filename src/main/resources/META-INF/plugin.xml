@@ -27,8 +27,11 @@
     <extensions defaultExtensionNs="com.intellij">
         <toolWindow factoryClass="com.chinese.music.chinesemusic.factory.ChineseMusicToolWindowFactory"
                     id="音乐播放器" anchor="bottom" doNotActivateOnStart="true" icon="ChineseMusicIcons.ToolWindowIcon" />
-
+        <statusBarWidgetFactory implementation="com.chinese.music.chinesemusic.factory.ChineseMusicStatusBarFactory"/>
     </extensions>
+
+    <resource-bundle>i18n</resource-bundle>
+
     <actions>
         <action id="com.chinese.music.main" class="com.chinese.music.chinesemusic.action.ChineseMusicMain"
                 text="ChineseMusicMain" description="ChineseMusicMain">

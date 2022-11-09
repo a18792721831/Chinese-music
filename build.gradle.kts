@@ -10,6 +10,12 @@ repositories {
     mavenCentral()
 }
 
+dependencies{
+    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+    compileOnly("org.projectlombok:lombok:1.18.24")
+    annotationProcessor("org.projectlombok:lombok:1.18.24")
+}
+
 // Configure Gradle IntelliJ Plugin
 // Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 intellij {
@@ -27,8 +33,8 @@ tasks {
     }
 
     patchPluginXml {
-        sinceBuild.set("213")
-        untilBuild.set("223.*")
+        sinceBuild.set("203.5981")
+//        untilBuild.set("223.*")
     }
 
     signPlugin {
